@@ -3,6 +3,7 @@ package com.biblioteca.api.model;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Getter
@@ -11,6 +12,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection = "libros")
 public class Libro {
     // Atributos privados
+    @Id
     private String isbn;
     private String titulo;
     private String autor;
