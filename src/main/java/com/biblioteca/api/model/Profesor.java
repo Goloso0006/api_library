@@ -8,7 +8,6 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Getter
 @Setter
 @ToString(callSuper = true)
-@Document(collection = "usuarios")
 public class Profesor extends Usuario {
     // Atributos privados
     private String codigoProfesor;
